@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🔐 A Secret Birthday File</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Caveat:wght@500;600;700&display=swap');
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;color:#fff;background:#080916;
+ font-family:Quicksand,Arial,sans-serif;overflow-x:hidden;
+}
+body:before{
+ content:"";position:fixed;inset:0;z-index:-2;
+ background:
+ radial-gradient(circle at 15% 20%,rgba(255,105,180,.22),transparent 24%),
+ radial-gradient(circle at 80% 30%,rgba(126,87,194,.22),transparent 25%),
+ radial-gradient(circle at 50% 90%,rgba(255,180,220,.13),transparent 30%),
+ linear-gradient(160deg,#070816,#11132d 55%,#090817);
+}
+.stars{position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:
+ radial-gradient(2px 2px at 12% 18%,#fff,transparent),
+ radial-gradient(1.5px 1.5px at 28% 75%,#fff,transparent),
+ radial-gradient(2px 2px at 72% 15%,#fff,transparent),
+ radial-gradient(1.5px 1.5px at 88% 62%,#fff,transparent),
+ radial-gradient(2px 2px at 54% 38%,#fff,transparent),
+ radial-gradient(1px 1px at 42% 12%,#fff,transparent);
+ opacity:.65}
+nav{position:sticky;top:0;z-index:20;background:rgba(7,8,22,.78);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08);padding:14px 5%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:Caveat;font-size:26px}.navlinks{display:flex;gap:18px;font-size:13px}.navlinks a{color:#ddd;text-decoration:none}
+.hero{min-height:90vh;display:grid;place-items:center;padding:70px 7%;text-align:center}
+.card{max-width:850px;margin:auto}
+.paw{font-size:28px}
+.badge{display:inline-block;padding:7px 14px;border:1px solid #ff77ba;border-radius:999px;color:#ffacd2;font-size:12px;letter-spacing:2px}
+h1{font-family:Caveat;font-size:clamp(64px,12vw,125px);line-height:.8;margin:25px 0 18px;text-shadow:0 0 28px rgba(255,100,180,.5)}
+.subtitle{font-size:18px;line-height:1.7;color:#e8e4ee;max-width:650px;margin:auto}
+.panda{font-size:120px;filter:drop-shadow(0 15px 25px rgba(0,0,0,.45));animation:float 3s ease-in-out infinite;margin:15px}
+@keyframes float{50%{transform:translateY(-12px) rotate(2deg)}}
+.btn{border:0;background:linear-gradient(135deg,#ff4fa3,#ff82c1);color:white;font-weight:700;padding:16px 25px;border-radius:999px;cursor:pointer;box-shadow:0 10px 30px rgba(255,79,163,.28);font-size:15px;margin:18px 7px}
+.btn.secondary{background:transparent;border:1px solid #ff79b8;box-shadow:none}
+section{padding:85px 7%;max-width:1100px;margin:auto}
+.hidden{display:none!important}
+.section-title{font-family:Caveat;font-size:54px;text-align:center;margin:0 0 12px}
+.section-sub{text-align:center;color:#c9c5d0;margin-bottom:35px}
+.paper-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.paper{background:linear-gradient(145deg,#ffe8f3,#ffd1e6);color:#342433;padding:25px;border-radius:18px;box-shadow:0 18px 45px rgba(0,0,0,.25);transform:rotate(var(--r));}
+.paper h3{font-family:Caveat;font-size:30px;margin:0 0 10px}
+.paper p{line-height:1.7;margin:0}
+.reveal{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.12);padding:35px;border-radius:28px;text-align:center;backdrop-filter:blur(10px)}
+.big{font-family:Caveat;font-size:48px;color:#ff9bca}
+.clue{margin:14px auto;padding:14px;border-radius:14px;background:rgba(255,105,180,.08);max-width:650px}
+input{padding:13px 16px;border-radius:999px;border:1px solid #ff78b9;background:#111326;color:white;outline:none;width:min(320px,90%)}
+footer{text-align:center;padding:45px 20px;color:#9995a7;font-size:13px}
+.heart{position:fixed;pointer-events:none;animation:rise 2.5s ease-out forwards;font-size:20px;z-index:50}
+@keyframes rise{to{transform:translateY(-220px) rotate(25deg);opacity:0}}
+.confetti{position:fixed;width:9px;height:15px;z-index:60;top:-20px;animation:fall 3s linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:.1}}
+#surprise{scroll-margin-top:70px}
+.small{font-size:12px;color:#aaa}
+</style>
+</head>
+<body>
+<div class="stars"></div>
+
+<nav>
+  <div class="logo">🐾 A Secret Message</div>
+  <div class="navlinks">
+    <a href="#home">Home</a><a href="#surprise">Surprise</a><a href="#panda">Panda Says</a><a href="#mystery">Mystery</a>
+  </div>
+</nav>
+
+<main>
+<section class="hero" id="home">
+ <div class="card">
+   <div class="paw">🐾 🐼 🐾</div>
+   <span class="badge">CLASSIFIED BIRTHDAY FILE</span>
+   <div class="panda">🐼</div>
+   <h1>Hey You! 💗</h1>
+   <p class="subtitle">Yes, <b>you</b>. The person who somehow manages to be annoying, funny, and strangely lovable at the same time.</p>
+   <p class="subtitle">Someone has a little birthday surprise waiting...</p>
+   <button class="btn" onclick="openSurprise()">🎁 Open Your Birthday Surprise</button>
+ </div>
+</section>
+
+<section id="surprise">
+ <div class="reveal">
+   <div class="big">🎂 Happy Birthday! 🎂</div>
+   <p>Congratulations! You have successfully survived another year of being <b>you</b>. 😂</p>
+   <p>And apparently, someone thought you deserved a special message.</p>
+   <button class="btn" onclick="celebrate()">💗 Accept Birthday Love</button>
+   <div id="birthdayReveal" class="hidden">
+      <h2 class="big">You are officially one year more awesome. 🐼</h2>
+      <p>May your day contain more cake than responsibilities, more laughter than stress, and absolutely zero people asking you, “So when are you getting married?” 😭</p>
+   </div>
+ </div>
+</section>
+
+<section id="panda">
+ <h2 class="section-title">A Panda Has Something To Say 🐼</h2>
+ <p class="section-sub">The panda was asked to describe you. It refused to be serious.</p>
+ <div class="paper-grid">
+   <div class="paper" style="--r:-2deg"><h3>Reason #1 💕</h3><p>You somehow make ordinary days more entertaining. Mostly because of the nonsense you say.</p></div>
+   <div class="paper" style="--r:2deg"><h3>Reason #2 😂</h3><p>You are the kind of person who can turn a normal conversation into a full episode.</p></div>
+   <div class="paper" style="--r:-1deg"><h3>Reason #3 🐼</h3><p>Even pandas approve of you. And pandas have excellent judgment.</p></div>
+   <div class="paper" style="--r:3deg"><h3>Reason #4 👀</h3><p>There may or may not be someone who thinks you're a little more special than you realize.</p></div>
+ </div>
+</section>
+
+<section>
+ <div class="reveal">
+   <div class="big">💌 Birthday Contract</div>
+   <p>You are legally required to:</p>
+   <p>✔ Eat something delicious<br>✔ Laugh at least 10 times<br>✔ Take at least one ridiculous photo<br>✔ Ignore unnecessary drama<br>✔ Have an amazing year</p>
+   <p class="small">Failure to comply may result in additional birthday cake.</p>
+ </div>
+</section>
+
+<section id="mystery">
+ <h2 class="section-title">But... Who Am I? 👀</h2>
+ <p class="section-sub">The most important question has been intentionally left unanswered.</p>
+ <div class="reveal">
+   <div class="panda">🐼</div>
+   <p>Someone who knows you.</p>
+   <p>Someone who wanted to make you smile.</p>
+   <p>Someone who is currently enjoying the fact that you're trying to figure this out. 😌</p>
+   <div class="clue">🔎 <b>Clue:</b> You have probably talked to this person before.</div>
+   <div class="clue">🔎 <b>Second clue:</b> They know you well enough to know that you would actually investigate this.</div>
+   <button class="btn secondary" onclick="fakeReveal()">🔐 Reveal Identity</button>
+   <p id="fake" class="hidden big">ACCESS DENIED 😂<br><span style="font-family:Quicksand;font-size:16px;color:#ddd">Nice try. The panda isn't talking.</span></p>
+ </div>
+</section>
+
+<section>
+ <div class="reveal">
+   <div class="big">One Last Thing 💗</div>
+   <p>Whatever happens this year, keep being your weird, funny, kind self.</p>
+   <p><b>Happy Birthday, mystery human. 🐼🎂❤️</b></p>
+   <p>— <i>Someone who prefers to remain classified</i></p>
+ </div>
+</section>
+</main>
+
+<footer>🐼 Made with suspicious amounts of birthday love · Identity: CLASSIFIED · Do not interrogate the panda.</footer>
+
+<script>
+function openSurprise(){document.querySelector('#surprise').scrollIntoView({behavior:'smooth'}); setTimeout(celebrate,700)}
+function celebrate(){
+ document.getElementById('birthdayReveal').classList.remove('hidden');
+ for(let i=0;i<55;i++){
+   const c=document.createElement('div'); c.className='confetti';
+   c.style.left=Math.random()*100+'vw';
+   c.style.animationDelay=(Math.random()*.8)+'s';
+   c.style.transform='rotate('+Math.random()*360+'deg)';
+   c.style.background=['#ff6db3','#ffd166','#fff','#b388ff','#7ee7ff'][Math.floor(Math.random()*5)];
+   document.body.appendChild(c); setTimeout(()=>c.remove(),3800);
+ }
+ for(let i=0;i<12;i++){
+   const h=document.createElement('div'); h.className='heart'; h.textContent='💗';
+   h.style.left=(20+Math.random()*60)+'vw'; h.style.top=(50+Math.random()*30)+'vh';
+   h.style.animationDelay=(Math.random()*.4)+'s'; document.body.appendChild(h); setTimeout(()=>h.remove(),3000);
+ }
+}
+function fakeReveal(){
+ const f=document.getElementById('fake'); f.classList.remove('hidden');
+ for(let i=0;i<7;i++){setTimeout(()=>{const h=document.createElement('div');h.className='heart';h.textContent='🐼';h.style.left=Math.random()*100+'vw';h.style.top='75vh';document.body.appendChild(h);setTimeout(()=>h.remove(),2500)},i*120)}
+}
+</script>
+</body>
+</html>
